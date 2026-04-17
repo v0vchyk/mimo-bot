@@ -1,85 +1,83 @@
 # Mimo Bot
 
-![Mimo Bot](images/mimo-cover.jpg)
-
-**Mimo Bot** is a compact DIY desktop robot built around the **ESP32-S3**, featuring an animated TFT display, touch input, sound output, battery power, and a 3D printed enclosure.
-
-Designed as a small interactive desk companion, Mimo Bot combines embedded hardware, expressive UI animation, and character-driven behavior in a portable form factor.
+<p align="center">
+  <img src="images/mimo-cover.jpg" alt="Mimo Bot" width="420">
+</p>
+<p align="center">
+  Compact DIY ESP32-S3 desktop robot with animated display, touch input, sound output, battery power, and a 3D printed enclosure.
+</p>
 
 ---
 
 ## Overview
 
-Mimo Bot is more than a simple electronics project — it is a small digital companion designed to feel alive on your desk.
+**Mimo Bot** is a compact DIY desktop robot built around an **ESP32-S3** and a **1.69" SPI IPS display**.
 
-The project combines:
+It is designed as a small interactive character with animated eyes, expressive UI, sound effects, clock and alarm features, and a clean futuristic look.
 
-- embedded development
-- animated user interface design
-- sound feedback
-- battery-powered portability
-- 3D printed mechanical design
+The goal of this project is to combine electronics, coding, 3D design, and personality into one build. Mimo Bot is not just a functional device, but a small digital companion that feels alive on your desk.
 
-Mimo Bot can display animated eyes and expressions, react to touch input, play sounds, and operate as a small clock/alarm style desktop robot.
+This build uses a custom animated interface, battery-powered electronics, and a 3D printed body. The project can be expanded with additional features such as weather display, touch interaction, status indicators, and more.
 
 ---
 
-## Highlights
+## Main features
 
 - Animated robot face and expressions
-- 1.69" SPI TFT display
-- Touch input via TTP223
-- Audio output through MAX98357A
+- TFT screen UI with custom graphics
+- Clock / idle display mode
+- Alarm and notification animations
+- Sound effects and feedback
 - Battery-powered portable design
-- TP4056 USB-C charging
-- DC-DC boosted power stage
-- 3D printed body and enclosure
-- Modular firmware structure for future expansion
+- 3D printable enclosure
+- Expandable hardware and software platform
 
 ---
 
-## Hardware
+## Components required for assembly
 
-### Core components
-
-- **ESP32-S3 Zero Type-C (4MB)**
-- **1.69" 240x280 SPI TFT display**
-- **MAX98357A I2S mono amplifier**
-- **Small speaker**
-- **TP4056 Type-C charging module**
-- **DC-DC step-up converter (0.9–4.2V to 5V)**
-- **TTP223 touch sensor**
-- **3.7V 1000mAh Li-Po battery (803040)**
-- **Power switch**
-- **Wiring and mounting hardware**
-- **3D printed enclosure parts**
-
-### Optional components
-
-- Battery voltage monitoring divider
-- Prototype board or custom PCB
-- Additional sensors
-- Decorative lighting or LEDs
-- Wi-Fi based feature extensions
+- **ESP32-S3 Zero Type-C (4MB)** — main controller board
+- **1.69" 240x280 rounded-corner SPI TFT display** — main screen for animations and UI
+- **MAX98357A I2S mono class-D amplifier module** — audio output module
+- **Small speaker** — for sound effects, notifications, and alarm
+- **TP4056 Type-C charging module** — Li-Po battery charging board
+- **DC-DC step-up converter (0.9–4.2V to 5V)** — voltage boost module
+- **TTP223 touch sensor** — touch input control
+- **3.7V 1000mAh Li-Po battery (803040)** — portable power source
+- **Power switch** — main power control
+- **Wires and connectors** — for internal wiring
+- **Mounting hardware** — screws, spacers, and fasteners
+- **3D printed body parts** — enclosure and structural parts
 
 ---
 
-## Features
+## Optional / recommended
 
-- Animated eyes and visual states
-- Touch interaction
-- Sound feedback
-- Clock mode
-- Alarm mode
-- Battery-powered operation
-- Expandable firmware architecture
+- **Battery voltage divider / monitoring circuit** — for battery level indication
+- **Custom PCB or prototype board** — for cleaner internal assembly
+- **Rubber feet or soft pads** — for desktop stability
 
 ---
+
+## License
+
+This project uses separate licenses for software and design assets:
+
+- **Firmware / source code:** MIT License
+- **3D models, renders, and media files:** CC BY-NC-SA
+
+### Summary
+
+- The firmware code is open and reusable under the MIT License.
+- The 3D models and visual assets may be used, remixed, and shared for personal and non-commercial purposes with proper credit.
+- Commercial use of the design or media assets is not allowed without permission.
 
 ## Repository structure
 
 ```text
 mimo-bot/
+├─ images/
+│  └─ mimo-cover.jpg
 ├─ mimo_bot/
 │  ├─ mimo_bot.ino
 │  ├─ alarm_manager.h
@@ -93,8 +91,7 @@ mimo-bot/
 │  ├─ settings_manager.h
 │  ├─ touch_manager.h
 │  └─ web_manager.h
-├─ images/
-│  └─ mimo-cover.jpg
-├─ LICENSE
+├─ stl/
 ├─ .gitignore
+├─ LICENSE
 └─ README.md
