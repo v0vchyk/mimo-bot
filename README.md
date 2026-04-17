@@ -56,6 +56,11 @@ The project is designed as a small interactive desk companion with expressive ey
 - Audio feedback
 - Battery-powered operation
 
+## Licensing
+
+- Firmware / source code: MIT License
+- 3D models, renders, and media files: CC BY-NC-SA
+
 ---
 
 ## Repository structure
