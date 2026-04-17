@@ -1,7 +1,6 @@
 # Mimo Bot
 
-```markdown
-![Mimo Bot](images/IMG_20260413_111540299.jpg)
+![Mimo Bot](images/mimo-cover.jpg)
 
 **Mimo Bot** is a compact DIY desktop robot built around the **ESP32-S3**, featuring an animated TFT display, touch input, sound output, battery power, and a 3D printed enclosure.
 
@@ -9,9 +8,25 @@ Designed as a small interactive desk companion, Mimo Bot combines embedded hardw
 
 ---
 
+## Overview
+
+Mimo Bot is more than a simple electronics project — it is a small digital companion designed to feel alive on your desk.
+
+The project combines:
+
+- embedded development
+- animated user interface design
+- sound feedback
+- battery-powered portability
+- 3D printed mechanical design
+
+Mimo Bot can display animated eyes and expressions, react to touch input, play sounds, and operate as a small clock/alarm style desktop robot.
+
+---
+
 ## Highlights
 
-- Animated eyes and robot expressions
+- Animated robot face and expressions
 - 1.69" SPI TFT display
 - Touch input via TTP223
 - Audio output through MAX98357A
@@ -39,23 +54,25 @@ Designed as a small interactive desk companion, Mimo Bot combines embedded hardw
 - **Wiring and mounting hardware**
 - **3D printed enclosure parts**
 
-### Optional
+### Optional components
 
 - Battery voltage monitoring divider
 - Prototype board or custom PCB
-- Additional sensors or lighting
+- Additional sensors
+- Decorative lighting or LEDs
 - Wi-Fi based feature extensions
 
 ---
 
 ## Features
 
-- Animated face and visual states
+- Animated eyes and visual states
 - Touch interaction
 - Sound feedback
 - Clock mode
 - Alarm mode
-- Portable battery operation
+- Battery-powered operation
+- Expandable firmware architecture
 
 ---
 
@@ -76,6 +93,8 @@ mimo-bot/
 │  ├─ settings_manager.h
 │  ├─ touch_manager.h
 │  └─ web_manager.h
+├─ images/
+│  └─ mimo-cover.jpg
 ├─ LICENSE
 ├─ .gitignore
 └─ README.md
