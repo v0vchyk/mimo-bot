@@ -1,60 +1,58 @@
 # Mimo Bot
 
-**Mimo Bot** is a compact DIY desktop robot based on the **ESP32-S3**, built as a small interactive character with an animated TFT display, touch input, sound output, battery power, and a 3D printed body.
+**Mimo Bot** is a compact DIY desktop robot built around the **ESP32-S3**, featuring an animated TFT display, touch input, sound output, battery power, and a 3D printed enclosure.
 
-The idea behind this project is to create more than just a simple electronic device — Mimo Bot is designed to feel like a small digital companion for your desk, with expressive eyes, animated UI states, clock and alarm features, and a clean futuristic look.
+Designed as a small interactive desk companion, Mimo Bot combines embedded hardware, expressive UI animation, and character-driven behavior in a portable form factor.
 
 ---
 
-## Features
+## Highlights
 
-- Animated robot face and expressions
+- Animated eyes and robot expressions
 - 1.69" SPI TFT display
-- Touch input with TTP223
-- Sound output via MAX98357A
+- Touch input via TTP223
+- Audio output through MAX98357A
 - Battery-powered portable design
-- Charging via TP4056 Type-C
-- DC-DC boost power stage
-- 3D printed enclosure
-- Expandable firmware structure
+- TP4056 USB-C charging
+- DC-DC boosted power stage
+- 3D printed body and enclosure
+- Modular firmware structure for future expansion
 
 ---
 
 ## Hardware
 
-### Main components
+### Core components
 
-- **ESP32-S3 Zero Type-C (4MB)** — main controller board
-- **1.69" 240x280 SPI TFT display** — main screen for animations and UI
-- **MAX98357A I2S mono amplifier** — audio output module
-- **Small speaker** — for sound effects, notifications, and alarm
-- **TP4056 Type-C charging module** — Li-Po charging board
-- **DC-DC step-up converter (0.9–4.2V to 5V)** — power boost module
-- **TTP223 touch sensor** — touch input
-- **3.7V 1000mAh Li-Po battery (803040)** — portable power source
+- **ESP32-S3 Zero Type-C (4MB)**
+- **1.69" 240x280 SPI TFT display**
+- **MAX98357A I2S mono amplifier**
+- **Small speaker**
+- **TP4056 Type-C charging module**
+- **DC-DC step-up converter (0.9–4.2V to 5V)**
+- **TTP223 touch sensor**
+- **3.7V 1000mAh Li-Po battery (803040)**
 - **Power switch**
-- **Wires, connectors, screws, and mounting hardware**
+- **Wiring and mounting hardware**
 - **3D printed enclosure parts**
 
 ### Optional
 
 - Battery voltage monitoring divider
 - Prototype board or custom PCB
-- Rubber feet or soft pads
-- Additional sensors
-- Wi-Fi based extensions
+- Additional sensors or lighting
+- Wi-Fi based feature extensions
 
 ---
 
-## Main functions
+## Features
 
-- Animated eyes and facial expressions
-- Interactive visual states
+- Animated face and visual states
+- Touch interaction
+- Sound feedback
 - Clock mode
 - Alarm mode
-- Touch interaction
-- Audio feedback
-- Battery-powered operation
+- Portable battery operation
 
 ---
 
