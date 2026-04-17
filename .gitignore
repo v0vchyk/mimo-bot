@@ -1,0 +1,16 @@
+config.h
+secrets.h
+credentials.h
+
+*.bin
+*.elf
+*.map
+*.tmp
+*.bak
+*.log
+
+.vscode/
+.idea/
+
+.DS_Store
+Thumbs.db
