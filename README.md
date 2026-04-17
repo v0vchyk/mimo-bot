@@ -1,8 +1,8 @@
 # Mimo Bot
 
-**Mimo Bot** is a compact DIY desktop robot based on the **ESP32-S3**, featuring an animated TFT display, touch input, sound output, battery power, and a 3D printed body.
+**Mimo Bot** is a compact DIY desktop robot based on the **ESP32-S3**, built as a small interactive character with an animated TFT display, touch input, sound output, battery power, and a 3D printed body.
 
-The project is designed as a small interactive desk companion with expressive eyes, animated UI, alarm/clock features, and a clean futuristic look.
+The idea behind this project is to create more than just a simple electronic device — Mimo Bot is designed to feel like a small digital companion for your desk, with expressive eyes, animated UI states, clock and alarm features, and a clean futuristic look.
 
 ---
 
@@ -40,7 +40,7 @@ The project is designed as a small interactive desk companion with expressive ey
 
 - Battery voltage monitoring divider
 - Prototype board or custom PCB
-- Rubber feet / soft pads
+- Rubber feet or soft pads
 - Additional sensors
 - Wi-Fi based extensions
 
@@ -48,7 +48,7 @@ The project is designed as a small interactive desk companion with expressive ey
 
 ## Main functions
 
-- Animated eyes and expressions
+- Animated eyes and facial expressions
 - Interactive visual states
 - Clock mode
 - Alarm mode
@@ -56,36 +56,25 @@ The project is designed as a small interactive desk companion with expressive ey
 - Audio feedback
 - Battery-powered operation
 
-## Licensing
-
-- Firmware / source code: MIT License
-- 3D models, renders, and media files: CC BY-NC-SA
-
 ---
 
 ## Repository structure
 
 ```text
 mimo-bot/
-├─ firmware/
-│  └─ mimo_bot/
-│     ├─ mimo_bot.ino
-│     ├─ display_manager.h
-│     ├─ audio_manager.h
-│     ├─ battery_manager.h
-│     ├─ touch_manager.h
-│     ├─ robot_brain.h
-│     ├─ robot_types.h
-│     └─ ...
-├─ images/
-│  ├─ cover.jpg
-│  ├─ assembled.jpg
-│  └─ wiring.png
-├─ docs/
-│  ├─ pinout.md
-│  └─ assembly.md
-├─ models/
-│  └─ STL files or link to Thingiverse
-├─ .gitignore
+├─ mimo_bot/
+│  ├─ mimo_bot.ino
+│  ├─ alarm_manager.h
+│  ├─ audio_manager.cpp
+│  ├─ audio_manager.h
+│  ├─ battery_manager.h
+│  ├─ display_manager.h
+│  ├─ event_queue.h
+│  ├─ robot_brain.h
+│  ├─ robot_types.h
+│  ├─ settings_manager.h
+│  ├─ touch_manager.h
+│  └─ web_manager.h
 ├─ LICENSE
+├─ .gitignore
 └─ README.md
