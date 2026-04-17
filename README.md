@@ -1,5 +1,8 @@
 # Mimo Bot
 
+```markdown
+![Mimo Bot](images/IMG_20260413_111540299.jpg)
+
 **Mimo Bot** is a compact DIY desktop robot built around the **ESP32-S3**, featuring an animated TFT display, touch input, sound output, battery power, and a 3D printed enclosure.
 
 Designed as a small interactive desk companion, Mimo Bot combines embedded hardware, expressive UI animation, and character-driven behavior in a portable form factor.
